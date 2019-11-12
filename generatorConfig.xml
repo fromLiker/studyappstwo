@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/HWK" driverClass="com.mysql.jdbc.Driver" password="admin" userId="root" />
+    <javaModelGenerator targetPackage="com.hwk.studyapp.entity" targetProject="studyapp" />
+    <sqlMapGenerator targetPackage="com.hwk.studyapp.mapper" targetProject="studyapp" />
+    <javaClientGenerator targetPackage="com.hwk.studyapp.dao" targetProject="studyapp" type="XMLMAPPER" />
+    <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名
+                 值为false的几个属性可以从官网查看对应的功能 ，总的就是将生成bean中的*example去掉 -->  
+    <table tableName="userinfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+    <!-- <table tableName="trainlist"></table> -->
+  </context>
+</generatorConfiguration>
